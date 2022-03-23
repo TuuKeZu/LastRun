@@ -1,0 +1,11 @@
+{
+    "required-directories": [
+        "MonoBleedingEdge",
+        "LastRun_Data",
+        "LastRun.exe",
+        "UnityCrashHandler64.exe",
+        "UnityPlayer.dll",
+        "WinPixEventRuntime.dll"
+    ],
+    "executable": "LastRun.exe"
+}

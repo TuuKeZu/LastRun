@@ -1,0 +1,18 @@
+{
+  "name": "lastrun-api",
+  "version": "1.0.0",
+  "description": "Restful api dedicated to managing leaderboards of the game LastRun. ",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tuukka Moilanen",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "express": "^4.17.2",
+    "express-rate-limit": "^6.0.5",
+    "joi": "^17.5.0",
+    "mysql": "^2.18.1"
+  }
+}

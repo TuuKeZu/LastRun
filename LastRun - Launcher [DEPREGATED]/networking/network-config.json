@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "port": 3000,
+    "version-control-api": "http://localhost:3000/api/version-control/",
+    "login-system-api": "http://localhost:3000/api/login/",
+    "session-system-api": "http://localhost:3000/api/session-storage/validate/"
+}

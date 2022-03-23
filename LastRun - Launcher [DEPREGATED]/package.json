@@ -1,0 +1,19 @@
+{
+  "name": "lastrun-launcher",
+  "productName": "LastRun Launcher",
+  "version": "0.1.1",
+  "description": "Application for the game LastRun.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Tuukka Moilanen",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^17.0.0",
+    "electron-log": "^4.4.6",
+    "extract-zip": "^2.0.1",
+    "request": "^2.88.2",
+    "request-progress": "^3.0.0"
+  }
+}

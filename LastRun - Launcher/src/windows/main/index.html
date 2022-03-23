@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="drag-area"></div>
+        <button id="MINIMIZE"><h1>&dash;</h1></button>
+        <button id="MAXIMIZE"><h2>&square;</h2></button>
+        <button id="CLOSE"><h3>&times;</h3></button>
+    </div>
+    <div class="side-bar-container">
+        <button class="side-bar-button-closed" id="SIDE-BAR-BUTTON">></button>
+        <h1 class="side-bar-text" id="SIDE-BAR-TEXT">Open Settings</h1>
+    </div>
+    <div class="side-menu" id="SIDE-MENU">
+        <div class="side-menu-content" id="MENU-CONTENT">
+            <div class="option-container">
+                <h1>Options</h1>
+                <h2>> Version directory</h2>
+                <h3 id="VERSION-PATH">Loading...</h3>
+                <button id="MENU-OPEN-VERSIONS">> Open in file explorer</button>
+            </div>
+            <div class="option-container">
+                <h2>> Currently Installed</h2>
+                <h3 id="MENU-VERSION-TEXT">Loading...</h3>
+                <button id="MENU-REINSTALL">> Reinstall</button>
+            </div>
+            <div class="option-container">
+                <h2>> Application logs</h2>
+                <h3 id="LOG-PATH">Loading...</h3>
+                <button id="MENU-OPEN-LOGS">> Reveal in file explorer</button>
+            </div>
+            <div class="option-container">
+                <h2>> Advanced</h2>
+                <h3>Developer settings for more advanced users.</h3>
+                <button id="MENU-F12">> Developer mode</button>
+                <button id="MENU-RELAUNCH">> Relaunch</button>
+            </div>
+            <div class="quit">
+                <button id="MENU-QUIT">> Quit</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="CONTAINER">
+        <div class="side-bar"></div>
+        <div class="content">
+            <div class="version-number">
+                <h1 id="VERSION-NUMBER">Loading...</h1>
+                <h2 id="VERSION-FIELD">> Loading...</h2>
+            </div>
+            <button class="login-button" id="LOGIN-BUTTON">></button>
+            <div class="login-info">
+                <h1 id="USERNAME-FIELD">Log In</h1>
+                <h2 id= "LOGIN-STATUS">> Logged out</h2>
+            </div>
+
+            <button class="interaction-button" id="INTERCATION-BUTTON"><h1 id="INTERACTION-TEXT">> Play</h1></button>
+            
+            <div class="download-bar" id="DOWNLOAD-CONTAINER">
+                <h1 id="DOWNLOAD-STATUS-FIELD">Initializing update...</h1>
+                <h2 id="DOWNLOAD-STATUS-NUMBER">> Calculating</h2>
+                <div id="DOWNLOAD-BAR"></div>
+            </div>
+        </div>
+        <div class="login-overlay" id="LOGIN-OVERLAY">
+            <h1>Login in process...</h1>
+            <h2>> Please login or close the login window to continue.</h2>
+        </div>
+    </div>
+</body>
+</html>

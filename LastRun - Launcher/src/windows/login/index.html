@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="drag-area"></div>
+            <button id="MINIMIZE"><h1>&dash;</h1></button>
+            <button id="MAXIMIZE"><h2>&square;</h2></button>
+            <button id="CLOSE"><h3>&times;</h3></button>
+        </div>
+        <div class="side-bar">
+            <h1>Login</h1>
+            <form id="FORM">
+                <h2>> Username</h2>
+                <h3>> Username you are known as in the community.</h3>
+                <input type="text" name="username" class="input-field" id="USERNAME">
+                <h2>> Password</h2>
+                <h3>> Password accosiated with said account.</h3>
+                <input type="password" name="password" class="input-field" id="PASSWORD">
+                <h4 class="login-error" id="LOGIN-ERROR"></h4>
+                <input type="submit" class="login" value="> Login" id="LOGIN">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

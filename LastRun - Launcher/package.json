@@ -1,0 +1,42 @@
+{
+  "name": "lastrun-launcher",
+  "version": "0.1.3",
+  "main": "src\\main.js",
+  "description": "Launcher for my game LastRun made with Electron. Includes features like auto-updates in launcher, auto-updates with game-files, login-system and more.",
+  "author": {
+    "name": "Tuukka Moilanen",
+    "email": "app@example.com",
+    "url": "https://example.com/"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder -w"
+  },
+  "dependencies": {
+    "electron-is-packaged": "^1.0.2",
+    "electron-log": "^4.3.0",
+    "electron-updater": "^4.6.5",
+    "request": "^2.88.2",
+    "request-progress": "^3.0.0",
+    "extract-zip": "^2.0.1"
+  },
+  "devDependencies": {
+    "electron": "^17.1.0",
+    "electron-builder": "^22.14.13"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://localhost/electron-auto-update/"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "verifyUpdateCodeSignature": false,
+      "publisherName": "Some Company - Stored in cert file",
+      "certificateFile": "./certs/test.pfx",
+      "certificatePassword": "pass"
+    }
+  }
+}
